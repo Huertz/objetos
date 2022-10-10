@@ -13,13 +13,12 @@ My motiavtion for this project was to able to test my own code efficiently
 I builded this project becuase I wanted to test my own code
 
 - What problem does it solve?
-It solves multiple problems 
+It solves multiple problems regarding employee, engineer, intern, maganer tests. 
 
 - What did you learn?
-I learned concepts of Object-Oriented Programming. I really liked the concepts of node its intresting 
+I learned concepts of Object-Oriented Programming. I really liked the concepts of OOP its really intresting 
 
 ## Table of Contents (Optional)
-
 
 - [Accepted Criteria](#criteria)
 - [Usage](#usage)
@@ -74,7 +73,7 @@ If you used any third-party assets that require attribution, list the creators w
 
 [Node.js](https://nodejs.org/en/)
 
-[Shields](https://shields.io/category/license)
+[]()
 
 ## License
 
