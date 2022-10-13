@@ -1,11 +1,11 @@
-// create Manager card
+// Manager Card
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
             <div class="card-header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -17,7 +17,7 @@ const generateManager = function (manager) {
     `;
 }
 
-// create Engineer card
+// Engineer Card
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
@@ -36,7 +36,7 @@ const generateEngineer = function (engineer) {
     `
 }
 
-// create Intern card 
+// Intern Card 
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
@@ -55,10 +55,10 @@ const generateIntern = function (intern) {
     `
 };
 
-// push array to page 
+// Array to Page 
 generateHTML = (data) => {
 
-    // array for cards 
+    // Array for Cards 
     pageArray = []; 
 
     for (let i = 0; i < data.length; i++) {
@@ -66,21 +66,21 @@ generateHTML = (data) => {
         const role = employee.getRole(); 
 
 
-        // call manager function
+        // manager Function
         if (role === 'Manager') {
             const managerCard = generateManager(employee);
 
             pageArray.push(managerCard);
         }
 
-        // call engineer function
+        // Engineer Function
         if (role === 'Engineer') {
             const engineerCard = generateEngineer(employee);
 
             pageArray.push(engineerCard);
         }
 
-        // call intern function 
+        // Intern Function 
         if (role === 'Intern') {
             const internCard = generateIntern(employee);
 
@@ -89,16 +89,16 @@ generateHTML = (data) => {
         
     }
 
-    // joining strings 
+    // Strings
     const employeeCards = pageArray.join('')
 
-    // return to generated page
+    // 
     const generateTeam = generateTeamPage(employeeCards); 
     return generateTeam;
 
 }
 
-// generate html page 
+// Generates HTML Page 
 const generateTeamPage = function (employeeCards) {   
   return`
   <!DOCTYPE html>
@@ -107,7 +107,6 @@ const generateTeamPage = function (employeeCards) {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Team Profile</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
   </head>
@@ -134,5 +133,5 @@ const generateTeamPage = function (employeeCards) {
 `;
 }
 
-// export to index
+// Export to Index
 module.exports = generateHTML; 

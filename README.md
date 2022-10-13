@@ -63,7 +63,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Usage
 
-![alt text]()
+![alt text](./image/Team-Profile.png)
 
 ## Credits
 
